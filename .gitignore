@@ -30,3 +30,4 @@ Temporary Items
 .idea/ kaldırılacak
 .idea
 .gitignore
+./idea
