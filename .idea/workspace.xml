@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4739e0f6-a6d3-4d18-aae1-511c93345dae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/READ ME" afterDir="false" />
-    </list>
+    <list default="true" id="4739e0f6-a6d3-4d18-aae1-511c93345dae" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,10 +67,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="558" y="345" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592694148126">
+    <state x="558" y="345" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592694471678">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="558" y="345" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027/-3840.-1087.3840.2137@0.23.1680.1027" timestamp="1592694148126" />
+    <state x="558" y="345" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027/-3840.-1087.3840.2137@0.23.1680.1027" timestamp="1592694471678" />
     <state x="427" y="278" key="IDE.errors.dialog" timestamp="1592692614251">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
