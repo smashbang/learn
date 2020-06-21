@@ -5,12 +5,11 @@ registered = input("Have you registered yet? (Yes or No): ")
 
 # Strings
 yes: str = 'Yes'
-yes1: str = 'yes'
 no: str = 'No'
 
 # Evaluation
-if registered == yes.lower() == yes1:
-    print('Your status is: ', yes)
+if registered == yes:
+    print("")
     print('Welcome!!!', name)
     print('')
     print('Details: ')
@@ -19,6 +18,7 @@ else:
     exit('You are not registered!!! Exiting')
 
 # Output
+print('Your registration status is: ', registered)
 print('Your name is:', name)
 print('Your age is:', age)
-print('Registration Status: ', registered)
+
