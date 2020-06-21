@@ -25,7 +25,5 @@ else:
     exit('You are not registered!!! Exiting')
 
 # Output
-print('Your registration status is: ', registered)
-print('Your name is:', name)
-print('Your age is:', age)
+print('Your registration status is: ' + registered + ' Your name is: ' + name + ' Your age is: ' + age)
 webbrowser.open('https://www.google.com')
