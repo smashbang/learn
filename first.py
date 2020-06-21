@@ -1,3 +1,5 @@
+import webbrowser
+
 # User Input Questions
 name = input("What is your name? ")
 age = input("Whats is your age? ")
@@ -13,6 +15,11 @@ if registered == yes:
     print('Welcome!!!', name)
     print('')
     print('Details: ')
+
+elif registered == no:
+    webbrowser.open('https://www.yahoo.com')
+    print('Redirecting')
+    exit()
 else:
     print('Your status is: ', no, )
     exit('You are not registered!!! Exiting')
@@ -21,4 +28,4 @@ else:
 print('Your registration status is: ', registered)
 print('Your name is:', name)
 print('Your age is:', age)
-
+webbrowser.open('https://www.google.com')
