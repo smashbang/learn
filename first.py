@@ -4,11 +4,12 @@ age = input("Whats is your age? ")
 registered = input("Have you registered yet? (Yes or No): ")
 
 # Strings
-yes: str = "Yes"
-no: str = "No"
+yes: str = 'Yes'
+yes1: str = 'yes'
+no: str = 'No'
 
 # Evaluation
-if registered == yes:
+if registered == yes.lower() == yes1:
     print('Your status is: ', yes)
     print('Welcome!!!', name)
     print('')
