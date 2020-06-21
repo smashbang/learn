@@ -18,7 +18,7 @@ if registered == yes:
 
 elif registered == no:
     webbrowser.open('https://www.yahoo.com')
-    print('Redirecting')
+    print('Redirecting to website')
     exit()
 else:
     print('Your status is: ', no, )
@@ -26,4 +26,6 @@ else:
 
 # Output
 print('Your registration status is: ' + registered + ' Your name is: ' + name + ' Your age is: ' + age)
+print('')
+print('Redirecting to website')
 webbrowser.open('https://www.google.com')
