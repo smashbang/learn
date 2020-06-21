@@ -1,3 +1,6 @@
 name = input("What is your name? ")
-age = input("Whats is your age?")
-print(name, age)
+age = input("Whats is your age? ")
+registered = input("Have you registered yet? ")
+print("Your name is:",name)
+print("Your age is:",age)
+print("Registration Status: ",registered)
