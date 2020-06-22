@@ -19,7 +19,6 @@ if registered == yes:
 elif registered == no:
     print('Redirecting to website')
     webbrowser.open('https://www.google.com')
-    exit()
 else:
     print('Your status is: ', no, )
     exit('You are not registered!!! Exiting')
