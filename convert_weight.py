@@ -1,5 +1,5 @@
 # n
-scale: str = input('What do you want to convert to kgs or lbs? ')
+scale: str = input('Convert to kgs or lbs ? ')
 
 weight_kgs: str = 'kgs'
 weight_lbs: str = 'lbs'

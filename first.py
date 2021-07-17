@@ -19,12 +19,14 @@ if registered == yes:
 elif registered == no:
     print('Redirecting to website')
     webbrowser.open('https://www.google.com')
+    exit('You are not registered!!! Exiting')
+
 else:
     print('Your status is: ', no, )
     exit('You are not registered!!! Exiting')
 
 # Output
-print('Your registration status is: ' + registered + ' Your name is: ' + name + ' Your age is: ' + age)
+print('Your registration status is: ' + registered + '\nYour name is: ' + name + '\nYour age is: ' + age)
 print('')
 print('Redirecting to website')
 webbrowser.open('https://duckduckgo.com')
