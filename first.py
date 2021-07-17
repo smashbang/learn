@@ -2,17 +2,23 @@ import webbrowser
 
 # User Input Questions
 name = input("What is your name? ")
+surname = input("What is your surname? ")
 age = input("Whats is your age? ")
 registered = input("Have you registered yet? (Yes or No): ")
+password = input("What is the password? ")
 
 # Strings
 yes: str = 'Yes'
 no: str = 'No'
+passwd: str = '12345'
 
 # Evaluation
-if registered == yes:
+if password != passwd:
+    exit('Password is incorrect!! Exiting')
+
+elif registered == yes:
     print("")
-    print('Welcome!!!', name)
+    print('Welcome!!!', name, surname)
     print('')
     print('Details: ')
 
@@ -26,7 +32,7 @@ else:
     exit('You are not registered!!! Exiting')
 
 # Output
-print('Your registration status is: ' + registered + '\nYour name is: ' + name + '\nYour age is: ' + age)
+print('Your registration status is: ' + registered + '\nYour name is: ' + name + ' ' + surname + '\nYour age is: ' + age)
 print('')
 print('Redirecting to website')
 webbrowser.open('https://duckduckgo.com')
