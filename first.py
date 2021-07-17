@@ -16,6 +16,8 @@ reg: str = 'Registered'
 
 # Evaluation
 if password != passwd:
+    print("")
+    print('Get out of here!!! Come back with the password!!!')
     exit('Password is incorrect!! Exiting')
 
 elif registered == yes:
