@@ -1,6 +1,6 @@
 import webbrowser
 
-# User Input Questions
+# Users Input Questions
 name = input("What is your name? ")
 surname = input("What is your surname? ")
 age = input("Whats is your age? ")
