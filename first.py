@@ -11,6 +11,8 @@ password = input("What is the password? ")
 yes: str = 'Yes'
 no: str = 'No'
 passwd: str = '12345'
+nreg: str = 'Not registered'
+reg: str = 'Registered'
 
 # Evaluation
 if password != passwd:
@@ -23,7 +25,10 @@ elif registered == yes:
     print('Details: ')
 
 elif registered == no:
-    print('Redirecting to website')
+    print("")
+    print('Your registrations status: ' + nreg + '\nYour name is: ' + name + ' ' + surname + '\nYour age is: ' + age)
+    print("")
+    print('Redirecting to Google')
     webbrowser.open('https://www.google.com')
     exit('You are not registered!!! Exiting')
 
@@ -32,7 +37,7 @@ else:
     exit('You are not registered!!! Exiting')
 
 # Output
-print('Your registration status is: ' + registered + '\nYour name is: ' + name + ' ' + surname + '\nYour age is: ' + age)
+print('Your registration status: ' + reg + '\nYour name is: ' + name + ' ' + surname + '\nYour age is: ' + age)
 print('')
-print('Redirecting to website')
+print('Redirecting to login website')
 webbrowser.open('https://duckduckgo.com')
