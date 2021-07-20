@@ -1,4 +1,4 @@
-#  User verification, and password confirmation to get to a login website.
+#  User verification, and password confirmation and redirection to login.
 
 import webbrowser
 
