@@ -1,3 +1,5 @@
+#  User verification, and password confirmation to get to a login website.
+
 import webbrowser
 
 # Users Input Questions
