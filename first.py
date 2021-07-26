@@ -13,7 +13,7 @@ password = input("What is the password? ")
 yes: str = 'Yes'
 no: str = 'No'
 passwd: str = '12345'
-nreg: str = 'Not registered'
+noreg: str = 'Not registered'
 reg: str = 'Registered'
 check: int = 17
 
@@ -25,8 +25,8 @@ if password != passwd:
 
 elif age <= check:
     print("")
-    print('You are under aged:',name, surname)
-    print('Your registrations status: ' + registered + '\nYour name is: ' + name + ' ' + surname + '\nYour age is:',age)
+    print('You are under aged:', name, surname)
+    print('Your registration status: ' + registered + '\nYour name is: ' + name + ' ' + surname + '\nYour age is:', age)
     print("")
     webbrowser.open('https://www.sesamestreet.org')
     exit('To Young!! \nTo Sesame Street you go!!! \nExiting!!!')
@@ -39,20 +39,20 @@ elif registered == yes:
 
 elif registered == no:
     print("")
-    print('Your registrations status: ' + nreg + '\nYour name is: ' + name + ' ' + surname + '\nYour age is: ',age)
+    print('Your registration status: ' + noreg + '\nYour name is: ' + name + ' ' + surname + '\nYour age is: ', age)
     print("")
     print('Redirecting to registration page')
-    webbrowser.open('https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&flowName=GlifWebSignIn&flowEntry=SignUp')
-    exit('You are not registered!!! Exiting')
+    webbrowser.open('https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fmyaccount.google'
+                    '.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&flowName'
+                    '=GlifWebSignIn&flowEntry=SignUp')
+    exit('\nYou are not registered!!! \nExiting!!!')
 
 else:
     print('Your status is: ', no,)
-    exit('You are not registered!!! Exiting')
+    exit('\nYou are not registered!!! \nExiting!!!')
 
 # Output
-print('Your registration status: ' + reg + '\nYour name is: ' + name + ' ' + surname + '\nYour age is: ',age)
+print('Your registration status: ' + reg + '\nYour name is: ' + name + ' ' + surname + '\nYour age is: ', age)
 print('')
 print('Redirecting to login website')
 webbrowser.open('https://duckduckgo.com')
-
-
