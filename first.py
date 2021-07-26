@@ -56,6 +56,3 @@ print('Redirecting to login website')
 webbrowser.open('https://duckduckgo.com')
 
 
-
-
-
