@@ -9,8 +9,6 @@ registered = input("Have you registered yet? (Yes or No): ")
 age = int(input("Whats is your age? "))
 password = input("What is the password? ")
 
-
-
 # Strings
 yes: str = 'Yes'
 no: str = 'No'
