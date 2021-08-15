@@ -33,7 +33,7 @@ print(passwd)
 if password != passwd:
     print("")
     print('Get out of here!!! Come back with the password!!!')
-    exit('\nPassword is incorrect!! \nExiting!!!')
+    exit('Password is incorrect!! Exiting')
 
 elif age <= check:
     print("")
