@@ -14,10 +14,10 @@ age = int(input("Whats is your age? "))
 password = input("What is the password? ")
 
 # Strings
-yes: str = 'Yes'
-no: str = 'No'
-noreg: str = 'Not registered'
-reg: str = 'Registered'
+yes: str = 'Yes'.upper().lower()
+no: str = 'No'.upper().lower()
+notreg: str = 'Not registered'.upper().lower()
+reg: str = 'Registered'.upper().lower()
 check: int = 17
 
 while True:
@@ -49,7 +49,7 @@ elif registered == yes:
 
 elif registered == no:
     print("")
-    print('Your registration status: ' + noreg + '\nYour name is: ' + name + ' ' + surname + '\nYour age is: ', age)
+    print('Your registration status: ' + notreg + '\nYour name is: ' + name + ' ' + surname + '\nYour age is: ', age)
     print("")
     print('Redirecting to registration page')
     webbrowser.open('https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fmyaccount.google'

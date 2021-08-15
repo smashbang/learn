@@ -10,11 +10,11 @@ age = int(input("Whats is your age? "))
 password = input("What is the password? ")
 
 # Strings
-yes: str = 'Yes'
-no: str = 'No'
-noreg: str = 'Not registered'
+yes: str = 'Yes'.upper().lower()
+no: str = 'No'.upper().lower()
+noreg: str = 'Not registered'.upper().lower()
 passwd: str = '12345'
-reg: str = 'Registered'
+reg: str = 'Registered'.upper().lower()
 check: int = 17
 
 # Evaluation
