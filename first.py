@@ -13,8 +13,8 @@ password = input("What is the password? ")
 yes: str = 'Yes'.upper().lower()
 no: str = 'No'.upper().lower()
 noreg: str = 'Not registered'.upper().lower()
-passwd: str = '12345'
 reg: str = 'Registered'.upper().lower()
+passwd: str = '12345'
 check: int = 17
 
 # Evaluation
