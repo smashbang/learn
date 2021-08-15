@@ -26,7 +26,7 @@ while True:
             and any(c.isupper() for c in passwd)
             and sum(c.isdigit() for c in passwd) >= 3):
         break
-
+print()
 print('You entered the incorrect password!!!')
 print('Password is:', passwd)
 
