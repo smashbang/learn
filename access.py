@@ -1,4 +1,4 @@
-#  User verification, password confirmation and redirection to login.
+#  User verification, with randomly generated password confirmation and redirection to login.
 
 import secrets
 import string
