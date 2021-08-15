@@ -21,7 +21,7 @@ reg: str = 'Registered'.upper().lower()
 check: int = 17
 
 while True:
-    passwd = ''.join(secrets.choice(alphabet) for i in range(5))
+    passwd = ''.join(secrets.choice(alphabet) for i in range(6))
     if (any(c.islower() for c in passwd)
             and any(c.isupper() for c in passwd)
             and sum(c.isdigit() for c in passwd) >= 3):
@@ -29,7 +29,7 @@ while True:
 
 print("")
 print('You entered the incorrect password!!!')
-print('Password is:', passwd)
+print('Password was:', passwd)
 
 # Evaluation
 if password != passwd:
