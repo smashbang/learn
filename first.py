@@ -1,10 +1,6 @@
 #  User verification, password confirmation and redirection to login.
 
-import secrets
-import string
 import webbrowser
-
-alphabet = string.ascii_letters + string.digits
 
 # Users Input Questions
 name = input("What is your name? ")
@@ -17,17 +13,9 @@ password = input("What is the password? ")
 yes: str = 'Yes'
 no: str = 'No'
 noreg: str = 'Not registered'
+passwd: str = '12345'
 reg: str = 'Registered'
 check: int = 17
-
-while True:
-    passwd = ''.join(secrets.choice(alphabet) for i in range(5))
-    if (any(c.islower() for c in passwd)
-            and any(c.isupper() for c in passwd)
-            and sum(c.isdigit() for c in passwd) >= 3):
-        break
-
-print(passwd)
 
 # Evaluation
 if password != passwd:
