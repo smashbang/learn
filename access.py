@@ -22,9 +22,9 @@ check: int = 17
 
 while True:
     passwd = ''.join(secrets.choice(alphabet) for i in range(6))
-    if (any(c.islower() for c in passwd)
-            and any(c.isupper() for c in passwd)
-            and sum(c.isdigit() for c in passwd) >= 3):
+    if (any(a.islower() for a in passwd)
+            and any(a.isupper() for a in passwd)
+            and sum(a.isdigit() for a in passwd) >= 3):
         break
 
 print("")
