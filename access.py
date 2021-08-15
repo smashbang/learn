@@ -27,8 +27,6 @@ while True:
             and sum(c.isdigit() for c in passwd) >= 3):
         break
 
-print(passwd)
-
 # Evaluation
 if password != passwd:
     print("")
