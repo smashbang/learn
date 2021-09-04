@@ -15,8 +15,8 @@ kgs: str = 'kgs'
 lbs: str = 'lbs'
 
 if scale == kgs:
-    print('Your weight is: ', weight_kgs, ' kgs')
+    print('Your weight is: ', round(weight_kgs), ' kgs')
 elif scale == lbs:
-    print('Your weight is: ', weight_lbs, ' lbs')
+    print('Your weight is: ', round(weight_lbs), ' lbs')
 else:
     exit()
