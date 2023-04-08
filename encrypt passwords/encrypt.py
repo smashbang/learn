@@ -25,3 +25,4 @@ encrypted = fernet.encrypt(config)
 with open( '../config.ini.encrypted', 'wb' ) as encrypted_file:
     encrypted_file.write(encrypted)
 
+
