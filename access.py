@@ -68,14 +68,14 @@ elif registered == no:
     webbrowser.open('https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fmyaccount.google'
                     '.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&flowName'
                     '=GlifWebSignIn&flowEntry=SignUp')
-    exit('You are not registered!!!' '\nExiting!!!')
+    exit('You are not registered!!!' '\n')
 else:
     print('Your status is:', no,)
-    exit('\nYou are not registered!!!' '\n Exiting!!!' '\n')
+    exit('\nYou are not registered!!!' '\n')
 
 # Output
 print('Your registration status: ' + reg + '\nYour name is: ' + name + ' ' + surname + '\nYour age is: ', age)
 print('')
 print('Redirecting to login website' '\n')
-webbrowser.open('https://duckduckgo.com')
+webbrowser.open('https://accounts.google.com/v3/signin/identifier?dsh=S2013952555%3A1680986621172191&continue=https%3A%2F%2Fwww.google.com.au%2F%3Fclient%3Dsafari&ec=GAZAmgQ&hl=en&ifkv=AQMjQ7Saq-u7KlqUTVLkqmAuGEpX9aeekSqWjkbV1OYnDEMf6tF19ky1gM-4BP2d-J17-i8Zpzib&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin')
 
