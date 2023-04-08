@@ -1,6 +1,7 @@
 #  User verification, with password confirmation and redirection to login.
 
 import configparser
+import secrets
 import webbrowser
 
 from cryptography.fernet import Fernet
@@ -41,7 +42,7 @@ reg = 'Registered'.upper().lower()
 check = 16
 
 # Evaluation
-if password != passwd:
+if not secrets.compare_digest(password, passwd):
     print("")
     print('Get out of here!!!' '\nCome back with the password!!!' '\n')
     exit('Password is incorrect!!' '\n')
