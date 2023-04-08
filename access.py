@@ -38,13 +38,13 @@ yes = 'yes'.upper().lower()
 no = 'no'.upper().lower()
 noreg = 'Not registered'.upper().lower()
 reg = 'Registered'.upper().lower()
-check = 17
+check = 16
 
 # Evaluation
 if password != passwd:
     print("")
-    print('Get out of here!!! Come back with the password!!!')
-    exit('Password is incorrect!! Exiting')
+    print('Get out of here!!!' '\nCome back with the password!!!' '\n')
+    exit('Password is incorrect!!' '\n')
 
 elif age <= check:
     print("")
@@ -52,7 +52,7 @@ elif age <= check:
     print('Your registration status: ' + registered + '\nYour name is: ' + name + ' ' + surname + '\nYour age is:', age)
     print("")
     webbrowser.open('https://www.sesamestreet.org')
-    exit('Too young!! To Sesame Street you go!!! Exiting!!!')
+    exit('Too young!! ' '\nTo Sesame Street you go!!!' '\n')
 
 elif registered == yes:
     print("")
@@ -64,17 +64,17 @@ elif registered == no:
     print("")
     print('Your registration status: ' + noreg + '\nYour name is: ' + name + ' ' + surname + '\nYour age is: ', age)
     print("")
-    print('Redirecting to registration page')
+    print('Redirecting to registration page''\n')
     webbrowser.open('https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fmyaccount.google'
                     '.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&flowName'
                     '=GlifWebSignIn&flowEntry=SignUp')
     exit('\nYou are not registered!!! Exiting!!!')
 else:
     print('Your status is:', no,)
-    exit('\nYou are not registered!!! Exiting!!!')
+    exit('\nYou are not registered!!!' '\n Exiting!!!' '\n')
 
 # Output
 print('Your registration status: ' + reg + '\nYour name is: ' + name + ' ' + surname + '\nYour age is: ', age)
 print('')
-print('Redirecting to login website')
+print('Redirecting to login website' '\n')
 webbrowser.open('https://duckduckgo.com')
