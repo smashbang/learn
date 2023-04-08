@@ -12,7 +12,7 @@ with open( '../key.key', 'rb' ) as key_file:
     key = key_file.read()
 
 # read the contents of the config file
-with open('config.ini', 'rb') as config_file:
+with open( 'config.ini', 'rb' ) as config_file:
     config = config_file.read()
 
 # create a Fernet object with the key
