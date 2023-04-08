@@ -78,5 +78,8 @@ else:
 print('Your registration status: ' + reg + '\nYour name is: ' + name + ' ' + surname + '\nYour age is: ', age)
 print('')
 print('Redirecting to login website' '\n')
-webbrowser.open('https://accounts.google.com/v3/signin/identifier?dsh=S2013952555%3A1680986621172191&continue=https%3A%2F%2Fwww.google.com.au%2F%3Fclient%3Dsafari&ec=GAZAmgQ&hl=en&ifkv=AQMjQ7Saq-u7KlqUTVLkqmAuGEpX9aeekSqWjkbV1OYnDEMf6tF19ky1gM-4BP2d-J17-i8Zpzib&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin')
+webbrowser.open('https://accounts.google.com/v3/signin/identifier?dsh=S2013952555%3A1680986621172191&continue=https'
+                '%3A%2F%2Fwww.google.com.au%2F%3Fclient%3Dsafari&ec=GAZAmgQ&hl=en&ifkv=AQMjQ7Saq-u7KlqUTVLkqm'
+                'AuGEpX9aeekSqWjkbV1OYnDEMf6tF19ky1gM-4BP2d-J17-i8Zpzib&passive=true&flowName=GlifWebSignIn&f'
+                'lowEntry=ServiceLogin')
 
