@@ -7,7 +7,7 @@ import webbrowser
 from cryptography.fernet import Fernet
 
 # Load the encryption key from file
-with open( 'key.key', 'rb' ) as file:
+with open( 'key/key.key', 'rb' ) as file:
     key = file.read()
 
 # Create a Fernet cipher
