@@ -39,7 +39,7 @@ yes = 'yes'.upper().lower()
 no = 'no'.upper().lower()
 noreg = 'Not registered'.upper().lower()
 reg = 'Registered'.upper().lower()
-check = 16
+check = 17
 
 # Evaluation
 if not secrets.compare_digest(password, passwd):
@@ -50,7 +50,7 @@ if not secrets.compare_digest(password, passwd):
 elif age <= check:
     print("")
     print('You are underage:', name, surname)
-    print('Your registration status: ' + registered + '\nYour name is: ' + name + ' ' + surname + '\nYour age is:', age)
+    print('Your registration status: ' + registered + '\nYour name is: ' + name + ' ' + surname + '\nYour age is:', age, 'you qualify!!!')
     print("")
     webbrowser.open('https://www.sesamestreet.org')
     exit('Too young!! ' '\nTo Sesame Street you go!!!' '\n')
@@ -63,7 +63,7 @@ elif registered == yes:
 
 elif registered == no:
     print("")
-    print('Your registration status: ' + noreg + '\nYour name is: ' + name + ' ' + surname + '\nYour age is: ', age)
+    print('Your registration status: ' + noreg + '\nYour name is: ' + name + ' ' + surname + '\nYour age is:', age, 'you qualify!!!')
     print("")
     print('Redirecting to registration page''\n')
     webbrowser.open('https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fmyaccount.google'
@@ -75,7 +75,7 @@ else:
     exit('\nYou are not registered!!!' '\n')
 
 # Output
-print('Your registration status: ' + reg + '\nYour name is: ' + name + ' ' + surname + '\nYour age is: ', age)
+print('Your registration status: ' + reg + '\nYour name is: ' + name + ' ' + surname + '\nYour age is:', age, 'you qualify!!!')
 print('')
 print('Redirecting to login website' '\n')
 webbrowser.open('https://accounts.google.com/v3/signin/identifier?dsh=S2013952555%3A1680986621172191&continue=https'
