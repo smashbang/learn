@@ -68,7 +68,7 @@ elif registered == no:
     webbrowser.open('https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fmyaccount.google'
                     '.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&flowName'
                     '=GlifWebSignIn&flowEntry=SignUp')
-    exit('\nYou are not registered!!! Exiting!!!')
+    exit('You are not registered!!!' '\nExiting!!!')
 else:
     print('Your status is:', no,)
     exit('\nYou are not registered!!!' '\n Exiting!!!' '\n')
