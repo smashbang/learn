@@ -45,7 +45,8 @@ check = 17
 if not secrets.compare_digest(password, passwd):
     print("")
     print('Get out of here!!!' '\nCome back with the password!!!' '\n')
-    exit('Password is incorrect!!' '\n')
+    print('Password is incorrect!!' '\n')
+    exit()
 
 elif age <= check:
     print("")
@@ -53,7 +54,8 @@ elif age <= check:
     print('Your registration status: ' + registered + '\nYour name is: ' + name + ' ' + surname + '\nYour age is:', age, 'you qualify!!!')
     print("")
     webbrowser.open('https://www.sesamestreet.org')
-    exit('Too young!! ' '\nTo Sesame Street you go!!!' '\n')
+    print('Too young!! ' '\nTo Sesame Street you go!!!' '\n')
+    exit()
 
 elif registered == yes:
     print("")
@@ -65,14 +67,12 @@ elif registered == no:
     print("")
     print('Your registration status: ' + noreg + '\nYour name is: ' + name + ' ' + surname + '\nYour age is:', age, 'you qualify!!!')
     print("")
+    print ('You are not registered!!!' '\n')
     print('Redirecting to registration page''\n')
     webbrowser.open('https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fmyaccount.google'
                     '.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&flowName'
                     '=GlifWebSignIn&flowEntry=SignUp')
-    exit('You are not registered!!!' '\n')
-else:
-    print('Your status is:', no,)
-    exit('\nYou are not registered!!!' '\n')
+    exit()
 
 # Output
 print('Your registration status: ' + reg + '\nYour name is: ' + name + ' ' + surname + '\nYour age is:', age, 'you qualify!!!')
@@ -82,4 +82,3 @@ webbrowser.open('https://accounts.google.com/v3/signin/identifier?dsh=S201395255
                 '%3A%2F%2Fwww.google.com.au%2F%3Fclient%3Dsafari&ec=GAZAmgQ&hl=en&ifkv=AQMjQ7Saq-u7KlqUTVLkqm'
                 'AuGEpX9aeekSqWjkbV1OYnDEMf6tF19ky1gM-4BP2d-J17-i8Zpzib&passive=true&flowName=GlifWebSignIn&f'
                 'lowEntry=ServiceLogin')
-
