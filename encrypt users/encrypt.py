@@ -4,11 +4,11 @@ from cryptography.fernet import Fernet
 key = Fernet.generate_key()
 
 # save the key to a file for future use
-with open('key.key', 'wb') as key_file:
+with open( '../key.key', 'wb' ) as key_file:
     key_file.write(key)
 
 # load the key from the file
-with open('key.key', 'rb') as key_file:
+with open( '../key.key', 'rb' ) as key_file:
     key = key_file.read()
 
 # read the contents of the config file
@@ -22,6 +22,6 @@ fernet = Fernet(key)
 encrypted = fernet.encrypt(config)
 
 # write the encrypted data to a new file
-with open('config.ini.encrypted', 'wb') as encrypted_file:
+with open( '../config.ini.encrypted', 'wb' ) as encrypted_file:
     encrypted_file.write(encrypted)
 
