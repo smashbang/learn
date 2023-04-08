@@ -78,3 +78,4 @@ print('Your registration status: ' + reg + '\nYour name is: ' + name + ' ' + sur
 print('')
 print('Redirecting to login website' '\n')
 webbrowser.open('https://duckduckgo.com')
+
