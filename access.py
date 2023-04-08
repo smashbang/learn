@@ -16,7 +16,7 @@ cipher = Fernet(key)
 with open('config.ini.encrypted', 'rb') as file:
     data = file.read()
 
-# Decrypt thr data using the cipher
+# Decrypt the data using the cipher
 decrypted_data = cipher.decrypt(data)
 
 # Parse the decrypted data as a config file
