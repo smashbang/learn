@@ -1,4 +1,4 @@
-#  User verification, with randomly generated password confirmation and redirection to login.
+#  User verification, with password confirmation and redirection to login.
 
 import configparser
 import webbrowser
