@@ -51,7 +51,7 @@ if not secrets.compare_digest(password, passwd):
 elif age <= check:
     print("")
     print('You are underage:', name, surname)
-    print('Your registration status: ' + registered + '\nYour name is: ' + name + ' ' + surname + '\nYour age is:', age, 'you qualify!!!')
+    print('Your registration status: ' + registered + '\nYour name is: ' + name + ' ' + surname + '\nYour age is:', age, 'you do not qualify!!!')
     print("")
     webbrowser.open('https://www.sesamestreet.org')
     print('Too young!! ' '\nTo Sesame Street you go!!!' '\n')
